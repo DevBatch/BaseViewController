@@ -37,6 +37,6 @@ With this class we can customize UINavigationController. We can add buttons with
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-   s.frameworks = 'UIKit'
+   s.frameworks = 'UIKit' , 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

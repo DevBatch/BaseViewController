@@ -11,7 +11,7 @@ import UIKit
 
 
 
-enum UINavigationBarRightButtonType : Int {
+public enum UINavigationBarRightButtonType : Int {
     case none
     case done
     case settings
@@ -19,7 +19,7 @@ enum UINavigationBarRightButtonType : Int {
     case text
 }
 
-enum UINavigationBarLeftButtonType : Int {
+public enum UINavigationBarLeftButtonType : Int {
     case none
     case back
     case menu
@@ -28,7 +28,7 @@ enum UINavigationBarLeftButtonType : Int {
     
 }
 
-protocol BaseViewControllerDelegate {
+public protocol BaseViewControllerDelegate {
     func rightNavigationBarButtonClicked()
     func leftNavigationBarButtonClicked()
 }
@@ -46,7 +46,7 @@ open class BaseViewController: UIViewController {
     /**
      Child Class or Class which will inherit this class has to implement this delegate
      */
-    var baseDelegate: BaseViewControllerDelegate?
+     var baseDelegate: BaseViewControllerDelegate?
     
     /**
      This is the button which will be used as left button. Its View can be customized
@@ -58,6 +58,10 @@ open class BaseViewController: UIViewController {
     var leftbtnType:  UINavigationBarLeftButtonType?
     var rightbtnType: UINavigationBarRightButtonType?
     
+    public func setDelegate(){
+        self.baseDelegate = self as! BaseViewControllerDelegate
+    }
+    
     /**
      This function is used to customize native Navigation Bar
      - parameter title: The title of Navigation Bar
@@ -66,7 +70,7 @@ open class BaseViewController: UIViewController {
      - parameter leftButtonText : In case we have to show Text instead of image, then this will be the text that would display on left button
      - parameter rightButtonText : In case we have to show Text instead of image, then this will be the text that would display on right button
      */
-    func setupNavigationBar(_ title: String,  leftButtonType: UINavigationBarLeftButtonType = .text , rightButtonType: UINavigationBarRightButtonType = .text, leftButtonText : String = "", rightButtonText : String = "") {
+   public func setupNavigationBar(_ title: String,  leftButtonType: UINavigationBarLeftButtonType = .text , rightButtonType: UINavigationBarRightButtonType = .text, leftButtonText : String = "", rightButtonText : String = "") {
         self.hideNavigationBar(false)
         self.leftbtnType = leftButtonType
         self.rightbtnType = rightButtonType
@@ -136,7 +140,7 @@ open class BaseViewController: UIViewController {
      This function is used to set only Title in Navigation Bar
      - parameter title: The title of Navigation Bar
      */
-    func setNavigationBarTitle(title: String)
+  public  func setNavigationBarTitle(title: String)
     {
         self.navigationItem.title = title
     }
@@ -146,7 +150,7 @@ open class BaseViewController: UIViewController {
      - parameter imageName: The image to be shown
      */
     
-    func setupNavigationBarWithTitleImage(_ imageName: String, showBackButtonIfNeeded show: Bool) {
+   public func setupNavigationBarWithTitleImage(_ imageName: String, showBackButtonIfNeeded show: Bool) {
         self.hideNavigationBar(false)
         let barImageView: UIImageView = UIImageView(image: UIImage(named: imageName))
         self.navigationItem.titleView = barImageView
@@ -157,10 +161,20 @@ open class BaseViewController: UIViewController {
      Hide or Unhide Navigation Bar
      - parameter hide: A bool to set navigation bar
      */
-    func hideNavigationBar(_ hide: Bool) {
+   public func hideNavigationBar(_ hide: Bool) {
         if self.navigationController != nil {
             self.navigationController!.isNavigationBarHidden = hide
         }
+        
+    }
+    /**
+     This method will used to hide/unhide shadow of navigation bar
+     - parameter hide: A boolean which will hide/unhide shadow
+     
+     */
+    public func hideNavBarShaddow(hide : Bool)
+    {
+        self.navigationController?.navigationBar.setValue(hide, forKey: "hidesShadow")
         
     }
     /**
@@ -169,7 +183,7 @@ open class BaseViewController: UIViewController {
      - parameter animate: A bool to set animation
      */
    
-    func goBackToIndex(_ backIndex: Int, animated animate: Bool) {
+    public func goBackToIndex(_ backIndex: Int, animated animate: Bool) {
         if (self.navigationController!.viewControllers.count - backIndex) > 0 {
             let controller: BaseViewController = (self.navigationController!.viewControllers[(self.navigationController!.viewControllers.count - 1 - backIndex)] as! BaseViewController)
             self.navigationController!.popToViewController(controller, animated: animate)
@@ -213,16 +227,7 @@ open class BaseViewController: UIViewController {
     }
     
     
-    /**
-    This method will used to hide/unhide shadow of navigation bar
-     - parameter hide: A boolean which will hide/unhide shadow
-     
-     */
-    func hideNavBarBottomLine(hide : Bool)
-    {
-        self.navigationController?.navigationBar.setValue(hide, forKey: "hidesShadow")
-        
-    }
+    
     
     
     
