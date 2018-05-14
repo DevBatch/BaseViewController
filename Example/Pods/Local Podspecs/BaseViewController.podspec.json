@@ -1,9 +1,9 @@
 {
   "name": "BaseViewController",
   "version": "0.1.0",
-  "summary": "A short description of BaseViewController.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/muhammadnayabbutt/BaseViewController",
+  "summary": "BaseViewController is used to customize the default behavior of UINavigationBar",
+  "description": "With this class we can customize UINavigationController. We can add buttons with Custom Views. The actions of the buttons can be handled by implementing delegate of BaseViewController.",
+  "homepage": "https://github.com/MuhammadNayabButt/BaseViewController.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -18,5 +18,6 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "BaseViewController/Classes/**/*"
+  "source_files": "BaseViewController/Classes/**/*",
+  "frameworks": "UIKit"
 }
