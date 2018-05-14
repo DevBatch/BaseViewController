@@ -17,7 +17,7 @@ BaseViewController is available through [CocoaPods](https://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'BaseViewController'
+pod 'BaseViewController', :git => 'https://github.com/MuhammadNayabButt/BaseViewController.git'
 ```
 
 ## Author
