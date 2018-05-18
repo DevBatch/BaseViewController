@@ -128,12 +128,7 @@ open class BaseViewController: UIViewController {
         
 
         if title.count > 0 {
-            let lbNavTitle = UILabel (frame: CGRect(x: 0, y: 40, width: 320, height: 40))
-            lbNavTitle.center = CGPoint(x: 160, y: 285)
-            lbNavTitle.textAlignment = .left
-            lbNavTitle.text = title
-            lbNavTitle.textColor = UIColor.white
-            self.navigationItem.titleView = lbNavTitle
+            self.navigationItem.title = title
         }
     }
     /**
