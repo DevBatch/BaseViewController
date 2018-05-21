@@ -19,7 +19,26 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'BaseViewController', :git => 'https://github.com/MuhammadNayabButt/BaseViewController.git'
 ```
+## Usage
+```ruby
+Inherit ViewController from BaseViewController
+class ViewController: BaseViewController, BaseViewControllerDelegate {
 
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    self.baseDelegate = self
+    }
+    
+    func rightNavigationBarButtonClicked() {
+    print("Right Navigation Button Clicked in ViewController")
+    }
+    
+    func leftNavigationBarButtonClicked() {
+    print("Left Navigation Button Clicked in ViewController")
+    }
+}
+
+```
 ## Author
 
 muhammadnayabbutt, nayabbutt1@gmail.com

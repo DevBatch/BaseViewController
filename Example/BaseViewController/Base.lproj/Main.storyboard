@@ -43,10 +43,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QMT-eH-P61"/>
+                    <connections>
+                        <segue destination="u3J-5D-zjy" kind="show" identifier="goToFirstVC" id="YF0-dJ-sIX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="144.80000000000001" y="17.541229385307346"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="NZG-R0-xcO">
+            <objects>
+                <viewController id="u3J-5D-zjy" customClass="FirstViewController" customModule="BaseViewController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dOa-dj-hxQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oQw-y1-5bQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xVS-Ts-BOn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tmh-fQ-6vO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xq2-o4-0hi">

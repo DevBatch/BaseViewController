@@ -15,10 +15,14 @@ class ViewController: BaseViewController, BaseViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar("New Screen",  leftButtonText: "Back", rightButtonText: "Next")
-        self.setDelegate()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        self.setDelegate()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -30,6 +34,7 @@ class ViewController: BaseViewController, BaseViewControllerDelegate {
     
     func rightNavigationBarButtonClicked() {
         print("Right Navigation Button Clicked in ViewController")
+        self.performSegue(withIdentifier: "goToFirstVC", sender: nil)
     }
     
     func leftNavigationBarButtonClicked() {
