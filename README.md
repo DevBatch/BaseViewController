@@ -24,6 +24,14 @@ pod 'BaseViewController', :git => 'https://github.com/MuhammadNayabButt/BaseView
 Inherit ViewController from BaseViewController
 class ViewController: BaseViewController, BaseViewControllerDelegate {
 
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.setupNavigationBar("New Screen",  leftButtonText: "Back", rightButtonText: "Next")
+        //self.setupNavigationBar("First Screen",  leftButtonType: .back,rightButtonType: .settings)
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
     override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(true)
     self.baseDelegate = self
