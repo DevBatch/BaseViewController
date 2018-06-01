@@ -19,5 +19,8 @@
     "ios": "8.0"
   },
   "source_files": "BaseViewController/Classes/**/*",
-  "frameworks": "UIKit"
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }

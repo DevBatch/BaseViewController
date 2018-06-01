@@ -128,7 +128,8 @@ open class BaseViewController: UIViewController {
         
 
         if title.count > 0 {
-            self.navigationItem.title = title
+            
+            self.setNavigationBarTitle(title : title)
         }
     }
     /**

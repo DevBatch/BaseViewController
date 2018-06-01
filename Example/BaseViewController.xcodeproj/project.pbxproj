@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		242B6F1F36D3176D92A47FBD /* Pods_BaseViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89163C5B38DDE790E94C8503 /* Pods_BaseViewController_Tests.framework */; };
+		49970B7A20BBF188007A3FD5 /* MockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49970B7920BBF188007A3FD5 /* MockViewController.swift */; };
+		49970B8220BC0913007A3FD5 /* Pods_BaseViewController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49970B8320BC0913007A3FD5 /* Pods_BaseViewController_Tests.framework */; };
+		49970B8420BC0977007A3FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
+		49970B8520BC0984007A3FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		49F31D6C20B2D4B900E8BBA2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F31D6B20B2D4B900E8BBA2 /* FirstViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* BaseViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* BaseViewControllerTest.swift */; };
 		F566CFD0AA42F8059057E5B8 /* Pods_BaseViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4EA9B47D8F6AA5D1378EB96 /* Pods_BaseViewController_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		0742E728734EEB8255BC86E0 /* Pods-BaseViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseViewController_Tests/Pods-BaseViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		49970B7920BBF188007A3FD5 /* MockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewController.swift; sourceTree = "<group>"; };
+		49970B8320BC0913007A3FD5 /* Pods_BaseViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BaseViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F31D6B20B2D4B900E8BBA2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BaseViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +46,7 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* BaseViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* BaseViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerTest.swift; sourceTree = "<group>"; };
 		89163C5B38DDE790E94C8503 /* Pods_BaseViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EA9B47D8F6AA5D1378EB96 /* Pods_BaseViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BaseViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF6DB078D51C4B7344C89230 /* BaseViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BaseViewController.podspec; path = ../BaseViewController.podspec; sourceTree = "<group>"; };
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49970B8220BC0913007A3FD5 /* Pods_BaseViewController_Tests.framework in Frameworks */,
 				F566CFD0AA42F8059057E5B8 /* Pods_BaseViewController_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49970B7820BBF168007A3FD5 /* MockViewController */ = {
+			isa = PBXGroup;
+			children = (
+				49970B7920BBF188007A3FD5 /* MockViewController.swift */,
+			);
+			name = MockViewController;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +133,8 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				49970B7820BBF168007A3FD5 /* MockViewController */,
+				607FACEB1AFB9204008FA782 /* BaseViewControllerTest.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -145,6 +161,7 @@
 		6172D5EDFCE8F116236AFBD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49970B8320BC0913007A3FD5 /* Pods_BaseViewController_Tests.framework */,
 				A4EA9B47D8F6AA5D1378EB96 /* Pods_BaseViewController_Example.framework */,
 				89163C5B38DDE790E94C8503 /* Pods_BaseViewController_Tests.framework */,
 			);
@@ -261,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49970B8520BC0984007A3FD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +291,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseViewController_Tests/Pods-BaseViewController_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BaseViewController/BaseViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BaseViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -373,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49970B7A20BBF188007A3FD5 /* MockViewController.swift in Sources */,
 				49F31D6C20B2D4B900E8BBA2 /* FirstViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -383,7 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				49970B8420BC0977007A3FD5 /* ViewController.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* BaseViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

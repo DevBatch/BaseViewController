@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../BaseViewController/Classes/BaseViewController.swift"
-            timestampString = "548591084.407066"
+            filePath = "Tests/BaseViewControllerTest.swift"
+            timestampString = "549548303.1171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "setupNavigationBar(_:leftButtonType:rightButtonType:leftButtonText:rightButtonText:)"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "setUp()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
